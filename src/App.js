@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import './App.css';
 import './Login.css';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  Redirect,
 
 } from "react-router-dom";
 import Home from "./Home";
@@ -19,16 +19,10 @@ import Login from './Login';
 
 
 function App(){
-   //test
     return(
         <Router>
           <Header />
             <Switch>
-              <Route exact path="/">
-                  <Redirect to="/Home" />
-                  <Redirect/>
-              </Route>
-
               <Route path="/Home">
                   <Home />
                </Route>
